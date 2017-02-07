@@ -15,8 +15,15 @@
 
 </ul>
 <p></p>
-
-
+<?php
+$name = $_POST['name'];
+$EMail = $_POST['Email'];
+$country = $_POST['Country'];
+$age = $_POST['age'];
+print "<p>Name: $name </br> EMail: $EMail </br> Country: $country </br> Age: $age</p>";
+?>
+<p></p>
+<a href="php_example.html"><button class="coolbutton">Back</button></a>
 
 
 </body>
@@ -25,10 +32,3 @@
 </html>
 
 
-<?php
-$name = $_POST['name'];
-$EMail = $_POST['Email'];
-$country = $_POST['Country'];
-$age = $_POST['age'];
-print "<p>Name: $name </br> EMail: $EMail </br> Country: $country </br> Age: $age</p>";
-?>

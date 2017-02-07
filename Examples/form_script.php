@@ -21,7 +21,7 @@ $EMail = $_POST['Email'];
 $country = $_POST['Country'];
 $age = $_POST['age'];
 print "<p>Name: $name </br> EMail: $EMail </br> Country: $country </br> Age: $age</p>";
-mail($EMail, 'Hello!', 'This is the PHP Email Example!');
+
 ?>
 <p></p>
 <a href="php_example.html"><button class="coolbutton">Back</button></a>

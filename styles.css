@@ -120,3 +120,10 @@ background-color:lightgrey
 
 
 }
+.cooldropdown{
+height:25px; 
+width:50px
+box-sizing: border-box; 
+display:inlink-block;
+
+}

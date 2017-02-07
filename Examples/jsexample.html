@@ -14,11 +14,32 @@
 
 
 </ul>
-<p></p>
-<button class="coolbutton-warning">A Work In Progress</button>
-<p></p>
-<button class="coolbutton-noanim">Stay Tuned for More Soon!</button>
 
+
+
+<p></p>
+
+
+<script>
+function showimg(){
+	
+	document.getElementById('programmingimg').src = "programming.png";
+	document.getElementById('hidebtn').style = "display:inline-block";
+	document.getElementById('showbtn').style = "display:none";
+}
+function hideimg(){
+	
+	
+	document.getElementById('programmingimg').src = ""
+	document.getElementById('hidebtn').style = "display:none"
+	document.getElementById('showbtn').style = "display:inline-block"
+}
+</script>
+<button id="showbtn" onclick="showimg()" class='coolbutton'>Click to Show Image!</button>
+<p></p>
+<img src="" id="programmingimg"></img>
+<p></p>
+<button id="hidebtn" style="display:none" class="coolbutton" onclick="hideimg()">Click to Hide Image!</button>
 </body>
 </html>
 

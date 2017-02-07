@@ -6,13 +6,15 @@ list-style-type: none;
 margin:0; 
 padding:0;
 overflow:hidden;
-border-style:solid none solid none;
+border-style:none;
 background-color:white; 
+
 }
 
 li {
 display:inline; 
 float:left
+
 }
 
 li a{
@@ -22,6 +24,7 @@ display:block;
 	padding: 14px 16px; 
 	text-decoration: none;
 	font-family:verdana; 
+	transition:0.5s
 }
 li a:hover{
 

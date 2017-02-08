@@ -7,14 +7,28 @@
 <script>
 
 function test(ansnum){
+	function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+	var ans = prompt("Input the NUMBER of the correct answer here."); 
+	if (isNumeric(ans)){
+		ans = parseInt(ans)
+		
+	}
+	else{
+		alert("Invalid Input!")
+		return; 
+	}
 	
-	var ans = parseInt(prompt("Input the NUMBER of the correct answer here.")); 
 	if (ans == ansnum){
 		
 		alert("Correct!");
 		
 	}
-	
+	else if (isNaN(ans)){
+		alert("Invalid Input!"); 
+		
+	}
 	else{
 		
 		alert("Oops, incorrect. Better luck next time!"); 
@@ -31,10 +45,10 @@ function test(ansnum){
 </ul>
 <p>What does HTML stand for?</p>
 <p>Choices:</p>
-<p>1. Hyperlink Text Markup Language</p>
+<p>1. Hyper Text Markup Language</p>
 <p>2. redHat Tool Make Language</p>
-<p>3. Hyperlink Tool Markdown Language</p>
-<p>4. Hyperlink Text Markdown Language </p>
+<p>3. Hyperlink Tool Markup Language</p>
+<p>4. Hyper Text Markdown Language </p>
 <p></p>
 <button class="coolbutton" onclick="test(1)">Click to Test!</button>
 <p></p>

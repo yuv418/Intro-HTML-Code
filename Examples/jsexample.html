@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="background-color:lightgrey">
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../howto.html">How To</a></li>
+<li><a href ="../examples.html">Examples</a></li>
+
+
+
+
+</ul>
+
+
+
+<p></p>
+
+
+<script>
+function showimg(){
+	
+	document.getElementById('programmingimg').src = "programming.png";
+	document.getElementById('hidebtn').style = "display:inline-block";
+	document.getElementById('showbtn').style = "display:none";
+}
+function hideimg(){
+	
+	
+	document.getElementById('programmingimg').src = ""
+	document.getElementById('hidebtn').style = "display:none"
+	document.getElementById('showbtn').style = "display:inline-block"
+}
+</script>
+<button id="showbtn" onclick="showimg()" class='coolbutton'>Click to Show Image!</button>
+<p></p>
+<img src="" id="programmingimg"></img>
+<p></p>
+<button id="hidebtn" style="display:none" class="coolbutton" onclick="hideimg()">Click to Hide Image!</button>
+</body>
+</html>
+

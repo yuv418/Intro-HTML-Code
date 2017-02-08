@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="background-color:lightgrey">
+<script>
+
+function test(ansnum){
+	
+	var ans = parseInt(prompt("Input the NUMBER of the correct answer here.")); 
+	if (ans == ansnum){
+		
+		alert("Correct!");
+		
+	}
+	
+	else{
+		
+		alert("Oops, incorrect. Better luck next time!"); 
+	}
+	
+}
+
+</script>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../howto.html">How To</a></li>
+<li><a href ="../examples.html">Examples</a></li>
+
+</ul>
+<p>What does HTML stand for?</p>
+<p>Choices:</p>
+<p>1. Hyperlink Text Markup Language</p>
+<p>2. redHat Tool Make Language</p>
+<p>3. Hyperlink Tool Markdown Language</p>
+<p>4. Hyperlink Text Markdown Language </p>
+<p></p>
+<button class="coolbutton" onclick="test(1)">Click to Test!</button>
+<p></p>
+<p></p>
+<button class="coolbutton-warning"><p>A Work In Progress! </p><p>Check Back Later For More!</p></button>
+
+</body>
+
+
+</html>
+

@@ -3,17 +3,17 @@ ul {
 
 
 list-style-type: none;
-margin:0; 
+margin:1; 
 padding:0;
 overflow:hidden;
-border-style:none;
-background-color:white; 
+border-style:none none none none;
+background-color:white;
 top:0;
 
 }
 
 li {
-display:inline; 
+display:inline;
 float:left
 
 }
@@ -22,9 +22,9 @@ li a{
 display:block;
 	color: black;
 	text-align:center;
-	padding: 14px 16px; 
+	padding: 14px 16px;
 	text-decoration: none;
-	font-family:verdana; 
+	font-family:verdana;
 	transition:0.3s
 }
 li a:hover{
@@ -44,41 +44,41 @@ font-family:verdana;
 .coolbutton{
 
 background-color:#0074ca;
-border:0; 
+border:0;
 font-size:25px;
- font-family:verdana; 
-    
-  
+ font-family:verdana;
+
+
     color: white;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius:8px; 
-transition:0.5s; 
+    border-radius:8px;
+transition:0.5s;
 }
 
 .coolbutton:hover{
 
-padding: 15px 45px 
+padding: 15px 45px
 
 
 }
 .coolbutton-noanim{
 background-color:#0074ca;
-border:0; 
+border:0;
 font-size:25px;
- font-family:verdana; 
-    
-  
+ font-family:verdana;
+
+
     color: white;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius:8px; 
+    border-radius:8px;
 
 }
 
@@ -86,18 +86,18 @@ font-size:25px;
 
 
 background-color:#f8de7e;
-border:0; 
+border:0;
 font-size:25px;
- font-family:verdana; 
-    
-  
+ font-family:verdana;
+
+
     color: black;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius:8px; 
+    border-radius:8px;
 
 
 }
@@ -112,20 +112,71 @@ div.separate {
 iframe.wordrender{
 
 
-background-color:white; 
-border:none; 
+background-color:white;
+border:none;
 
 }
 body{
-background-color:lightgrey; 
-margin:1; 
+background-color:lightgrey;
+margin:1;
 
 
 }
 .cooldropdown{
-height:25px; 
+height:25px;
 width:50px
-box-sizing: border-box; 
+box-sizing: border-box;
 display:inlink-block;
 
+}
+table{
+border-collapse:collapse; 
+
+}
+table,td{
+
+border:1px solid black;
+}
+th,td{
+padding:5px 5px; 
+text-align:center; 
+}
+td{
+background-color:white;
+font-family:verdana; 
+transition:0.25s; 
+}
+th{
+font-family:Palatino Linotype;
+
+}
+
+td:hover{
+
+background-color:orange;
+text-align:static; 
+}
+.infodiv{
+
+visibility:hidden; 
+background-color:black; 
+
+display:none; 
+
+}
+
+td.clickable:hover .infodiv{
+visibility:visible; 
+display:inline; 
+
+}
+.infodiv{
+position:absolute; 
+
+margin-bottom:-60px;
+border-radius:6px; 
+background-color:black; 
+color:white; 
+padding:10px; 
+transition:0.5s
 }

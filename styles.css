@@ -131,7 +131,8 @@ display:inlink-block;
 }
 table{
 border-collapse:collapse; 
-
+width:750px; 
+height:500px
 }
 table,td{
 

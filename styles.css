@@ -181,3 +181,9 @@ color:white;
 padding:10px; 
 transition:0.5s
 }
+
+.nostyletable{
+background-color:none; 
+border:none; 
+
+}

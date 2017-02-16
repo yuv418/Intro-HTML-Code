@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="background-color:lightgrey">
+	<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../howto.html">How To</a></li>
+<li><a href ="../examples.html">Examples</a></li>
+<li><a href="../times.html">Times</a></li>
+
+</ul>
+<p></p>
+<a href="../examples.html"><button class="coolbutton">Back</button></a>
+<p></p>
+<table id="imgtable" style="background-color:none;">
+<tr>
+
+<td><img src="img_01.jpg" class="Janet Doe" ></img></td>
+<td><img src="img_02.png" width = "300px" height = "150px" class="John Doe" ></img></td>
+<td><img src="img_03.png" width = "300px" height = "150px" class="John Doe"></img></td>
+
+</tr>
+
+<tr>
+
+<td><img src="img_04.png" width = "300px" height = "150px" class="Jane Roe"></img></td>
+<td><img src="img_05.png" width = "300px" height = "150px" class="Johnny Roe"></img></td>
+
+</tr>
+
+
+
+</table>
+<p>Click to search for an image by the selected author.</p>
+<form id="frm1">
+  First name: <input type="text" name="fname" value="John"><br>
+  Last name: <input type="text" name="lname" value="Doe"><br><br>
+</form> 
+
+
+
+<button class="coolbutton" onclick="formHandle()">Submit</button>
+
+<p></p>
+
+<script>
+function formHandle() {
+	
+$(".appended").remove()
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + " ";
+    }
+    var p_tag = document.createElement("p");
+    p_tag.innerHTML ="Images by " + text + ":";
+    p_tag.className = "appended"
+   document.body.appendChild(p_tag);
+    search_get = document.getElementsByClassName(text);
+	for (i =0; i<search_get.length; i++){
+		line = document.createElement("br")
+		line.className="appended"
+		document.body.appendChild(line);
+		    var search_img = document.createElement("IMG");
+    
+    search_img.src = search_get[i].src;
+    search_img.width = "300";
+    search_img.height = "150";
+    search_img.className = "appended"; 
+    document.body.appendChild(search_img); 
+}
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>

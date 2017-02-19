@@ -3,10 +3,29 @@
 <head>
   <link rel="stylesheet" href="../styles.css">
   <title>HTML5 Player</title>
+   <script>
+  function openmenu(){
+	  
+	  menu = document.getElementById('nav')
+	  menu.style = "transition:0.5s"
+	  menu.style = "height:100%;width:100%"
+	  
+	  
+  }
+    function closemenu(){
+	  
+	  menu = document.getElementById('nav')
+	  menu.style = "transition:0.5s"
+	  menu.style = "height:0%;width:0%"
+	  
+	  
+  }
+  </script>
 </head>
 <body style="background-color:lightgrey">
-
-<ul>
+<p onclick="openmenu()" style="font-size:30px;">&#9776;</p>
+<ul id="nav">
+	<li><a href="javascript:void(0);" onclick="closemenu()">&times;</a></li>
 <li><a href="../index.html">Home</a></li>
 <li><a href="../howto.html">How To</a></li>
 <li><a href ="../examples.html">Examples</a></li>

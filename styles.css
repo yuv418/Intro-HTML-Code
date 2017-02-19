@@ -1,29 +1,37 @@
 
 ul {
-
-
+position:relative; 
+height:100%; 
+width:0%; 
 list-style-type: none;
-margin:1; 
+margin:0; 
 padding:0;
 overflow:hidden;
 border-style:none none none none;
 background-color:white;
-top:0;
+top:1;
+transition:0.3s; 
+top:0; 
 
+
+position:fixed; 
 }
 
 li {
-display:inline;
-float:left
 
+
+position:relative; 
+z-index:1;  
+display:block; 
 }
 
 li a{
 display:block;
+text-decoration:none; 
 	color: black;
 	text-align:center;
 	padding: 14px 16px;
-	text-decoration: none;
+	background-color:white; 
 	font-family:verdana;
 	transition:0.3s
 }

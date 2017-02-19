@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css"></link>
+<script>
+  function openmenu(){
+	  
+	  menu = document.getElementById('nav')
+	  menu.style = "transition:0.5s"
+	  menu.style = "height:100%;width:100%"
+	  
+	  
+  }
+    function closemenu(){
+	  
+	  menu = document.getElementById('nav')
+	  menu.style = "transition:0.5s"
+	  menu.style = "height:0%;width:0%"
+	  
+	  
+  }
+  </script>
+  <script>
+  function hover(imgnum){
+	  
+	  
+	  var author = author; 
+	  var imgnum = imgnum
+	  var div = document.getElementById(imgnum); 
+	  div.style = "background-color:#f8de7e;color:black;font-family:verdana"
+	  if (div.innerHTML == div.getElementsByTagName('img')[0].outerHTML){
+		    div.innerHTML = div.innerHTML + "<br>" +  "Author: " + div.getElementsByTagName('img')[0].className + "<br>";  
+	 
+	  }
+	 else{
+	 return; 
+	 }
+	  
+  }
+  function clr(imgnum){
+	  var div = document.getElementById(imgnum); 
+	  var img = div.getElementsByTagName('img')[0];
+	  div.innerHTML = img.outerHTML; 
+	  div.style = "background-color:none"; 
+	  return; 
+  }
+  
+  </script>
 </head>
 <body style="background-color:lightgrey">
-	<ul>
+	<p onclick="openmenu()" style="font-size:30px;">&#9776;</p>
+<ul id="nav">
+	<li><a href="javascript:void(0);" onclick="closemenu()">&times;</a></li>
 <li><a href="../index.html">Home</a></li>
 <li><a href="../howto.html">How To</a></li>
 <li><a href ="../examples.html">Examples</a></li>
@@ -14,22 +60,25 @@
 <p></p>
 <a href="../examples.html"><button class="coolbutton">Back</button></a>
 <p></p>
-<table id="imgtable" style="background-color:none;">
-<tr>
+<table style="border-collapse:none;width:none;height:none;">
+	<tbody id="imgtable" style="background-color:none;" >
+	<tr>
 
-<td><img src="img_01.jpg" class="Janet Doe" ></img></td>
-<td><img src="img_02.png" width = "300px" height = "150px" class="John Doe" ></img></td>
-<td><img src="img_03.png" width = "300px" height = "150px" class="John Doe"></img></td>
-
-</tr>
-
-<tr>
-
-<td><img src="img_04.png" width = "300px" height = "150px" class="Jane Roe"></img></td>
-<td><img src="img_05.png" width = "300px" height = "150px" class="Johnny Roe"></img></td>
+<td><div onmouseout="clr('1')" onmouseover="hover('1')" id="1"><img src="img_01.jpg" class="Janet Doe"></img></div></td>
+<td><div onmouseout="clr('2')" onmouseover="hover('2')" id="2"><img src="img_02.png" width = "300px" height = "150px" class="John Doe"></div></img></td>
+<td><div onmouseout="clr('3')" onmouseover="hover('3')" id="3"><img src="img_03.png" width = "300px" height = "150px" class="John Doe"></img></div></td>
 
 </tr>
 
+<tr>
+
+<td><div onmouseout="clr('4')" onmouseover="hover('4')" id="4"><img src="img_04.png" width = "300px" height = "150px" class="Jane Roe" id="4"></img></div></td>
+<td><div onmouseout="clr('5')" onmouseover="hover('5')" id="5"><img src="img_05.png" width = "300px" height = "150px" class="Johnny Roe" id="5"></div></img></td>
+
+</tr>
+
+
+	</tbody>
 
 
 </table>

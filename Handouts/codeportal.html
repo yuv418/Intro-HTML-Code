@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+  function openmenu(){
+	  
+	  menu = document.getElementById('nav')
+	  menu.style = "transition:0.5s"
+	  menu.style = "height:100%;width:100%"
+	  
+	  
+  }
+    function closemenu(){
+	  
+	  menu = document.getElementById('nav')
+	  menu.style = "transition:0.5s"
+	  menu.style = "height:0%;width:0%"
+	  
+	  
+  }
+  </script>
+  <title>Code Portal</title>
+</head>
+<body style="background-color:lightgrey">
+<p onclick="openmenu()" style="font-size:30px;">&#9776;</p>
+<ul id="nav">
+<li><a href="javascript:void(0);" onclick="closemenu()">&times;</a></li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../howto.html">How To</a></li>
+<li><a href ="../examples.html">Examples</a></li>
+<li><a href="../times.html">Times</a></li>
+
+</ul>
+
+<h3 style="font-family:verdana">Code Portal</h3>
+<a target="_blank" href="https://raw.githubusercontent.com/cdknight/Intro-HTML-Code/master/Handouts/hello_world.html"><button class="coolbutton">Hello World (Raw)</button></a>
+<p></p>
+<a href="hello_world.html" download><button class="coolbutton">Hello World (Download)</button></a>
+<p></p>
+<a target="_blank" href="https://raw.githubusercontent.com/cdknight/Intro-HTML-Code/master/Handouts/javascript_example.html"><button class="coolbutton">Javascript Example (Raw)</button></a>
+<p></p>
+<a href="javascript_example.html" download><button class="coolbutton">Javascript Example (Download)</button></a>
+</body>
+</html>
